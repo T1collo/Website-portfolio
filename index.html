@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bars -->
+    <nav id='desktop-nav'>
+        <div class="logo">Zero Day</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book.html">Appointments</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Zero Day</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="experience.html" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <figure class="section__pic-container">
+            <img src="./Assets/tuxpi.com.1708015193.jpg" alt="Zero Day Profile Picture">
+        </figure>
+        <div class="section__text">
+            <p class="section__text__p1">Hi, This is </p>
+            <h1 class="title">ZeroDay Tech</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+           
+            <div id="socials-container">
+                <img src="./Assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='#'">
+                <img src="./Assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='#'">
+            </div>
+        </div>
+    </section>
+    <section id="home">
+        <!-- Content of the Home Section -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <div class="nav-link-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 ZeroDay. All Rights</p>
+    </footer>
+</body>
+</html>
